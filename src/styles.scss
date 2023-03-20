@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    .theme{
+        &-dark{
+            --clr-prime: #68c0c6;
+            --clr-second: #182927;
+            --clr-border: #13201f;
+            --clr-font: #ffffff;
+        }
+        &-light{
+            --clr-prime: #29b5a5;
+            --clr-second: #f1f1ef;
+            --clr-border: #dadada;
+            --clr-font: #000000;
+        }
+        &-neon{
+            --clr-prime: #088a83;
+            --clr-second: #00fff1;
+            --clr-border: #07d9cd;
+            --clr-font: #000000;
+        }
+    }
+    
+}
+
+body{
+    background-color: var(--clr-second);
+    color: var(--clr-font);
+}
